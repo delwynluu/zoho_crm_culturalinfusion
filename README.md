@@ -9,17 +9,7 @@ This project implements a secure, automated, and low-cost serverless data pipeli
 
 # High-Level Architecture 
 Data Flow
-Zoho CRM (REST API)
-   ↓
-AWS Lambda (ETL, Python)
-   ↓
-Amazon S3 (Analytics Data Lake)
-   ↓
-AWS Glue Data Catalog
-   ↓
-Amazon Athena (SQL)
-   ↓
-Amazon QuickSight (Dashboards)
+Zoho CRM (REST API) -> AWS Lambda (ETL, Python) -> Amazon S3 (Analytics Data Lake) -> AWS Glue Data Catalog -> Amazon Athena (SQL) -> Amazon QuickSight (Dashboards)
 - Event-driven & scheduled using Amazon EventBridge
 - Serverless (no EC2, no servers to manage)
 - Incremental loads using Zoho “last_modified_time”
