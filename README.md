@@ -34,11 +34,11 @@ Amazon QuickSight (Dashboards)
 
 1. EventBridge triggers the ETL Lambda function once every weekend
 2. AWS Lambda:
--- Reads Zoho OAuth credentials from AWS Secrets Manager
--- Exchanges refresh token for access token
--- Fetches only records modified since the last successful run
--- Handles pagination and API rate limits
--- Cleans, normalises, and flattens JSON responses
+- Reads Zoho OAuth credentials from AWS Secrets Manager
+- Exchanges refresh token for access token
+- Fetches only records modified since the last successful run
+- Handles pagination and API rate limits
+- Cleans, normalises, and flattens JSON responses
 3. Cleaned data is written to Amazon S3 Analytics bucket
 4. AWS Glue Crawler detects schema changes and updates the Data Catalog
 5. Amazon Athena queries S3 data and builds analytics-ready tables
