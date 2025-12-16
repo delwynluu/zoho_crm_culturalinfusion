@@ -34,3 +34,6 @@ Zoho CRM (REST API) -> AWS Lambda (ETL, Python) -> Amazon S3 (Analytics Data Lak
 5. Amazon Athena queries S3 data and builds analytics-ready tables
 6. Amazon QuickSight refreshes dashboards automatically
 7. Amazon CloudWatch logs execution, errors, and performance metrics
+
+## AWS Architecture Diagram 
+![image](https://github.com/delwynluu/zoho_crm_culturalinfusion/blob/18b886ac29b872751bf7064774c9e86b41faaef9/AWS%20Architecture%20Diagram)
